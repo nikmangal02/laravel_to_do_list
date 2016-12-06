@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 Use App\item;
-use App\User;
 use DB;
 
 class BoughtListController extends Controller

@@ -56,7 +56,6 @@
                     </td>
                     <td>
                         {{ $displayList->store->store_name }}
-                        {{--{{$fetchStoreNameForBoughtList->store_name}}--}}
                     </td>
                   <td>
                       {{ $displayList->create_at}}

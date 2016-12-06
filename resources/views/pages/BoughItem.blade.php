@@ -29,11 +29,6 @@
                                 {{$store->store_name}}
                             </option>
                                 <label class="text-danger"></label>
-                                {{--@if(count($errors))
-                                    @foreach($errors->all() as $error)
-                                        {{ $error }}
-                                    @endforeach
-                                @endif--}}
                             @endforeach
                         </select>
                          <label class="text-danger">@if($errors->first('store')) {{ $errors->first('store') }} @endif </label><label> Didn't find your store.Click <a href="store/{{$fetch_name->id}}">here</a> to add your store</label>

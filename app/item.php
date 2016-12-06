@@ -8,12 +8,6 @@ class item extends Model
 {
     protected $table = 'item';
     protected $primaryKey = 'id';
-   /* protected $fillable = array
-    (
-        'name',
-        'description',
-        'quantity'
-    );*/
    protected $guarded = array('id');
 
     public $timestamps = false;

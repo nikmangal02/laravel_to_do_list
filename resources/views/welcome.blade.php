@@ -100,7 +100,6 @@
                             @endif
                         </tr>
                     @endforeach
-                    {{--                @if($count > 5)--}}
                     <tr>
                         <td colspan="7">
                             <div class="text-center">
@@ -108,7 +107,6 @@
                             </div>
                         </td>
                     </tr>
-                    {{--@endif--}}
                     <tr>
                         <td colspan="3">
                             <div class="text-center">

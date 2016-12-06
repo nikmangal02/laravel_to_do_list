@@ -45,7 +45,6 @@
                         <td colspan="2">
                             <input type="hidden" name="_token" value="{{csrf_token()}}">
                             <input type="submit" id="add" name="add" value="Add" class="btn btn-primary">
-                            {{--<input type="button" value="cancel" class="btn btn-default">--}}
                                 <a href="/" class="btn btn-default">Cancel</a>
                             <span class="pull-right text-danger">(* mandatory)</span>
                         </td>
