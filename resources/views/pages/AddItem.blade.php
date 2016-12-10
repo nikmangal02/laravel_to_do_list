@@ -39,6 +39,13 @@
                         <td>
                             <input type="text" placeholder="eg.10kg" id="quantity" name="quantity" value="{{old('quantity')}}">
                            <label class="text-danger"> @if($errors->first('quantity')) {{ $errors->first('quantity') }} @endif </label>
+                            <select name="unit" id="unit">
+                                <option value="kgs">Kilogram</option>
+                                <option value="gms">Gram</option>
+                                <option value="pcs">Piece</option>
+                                <option value="pkt">Packets</option>
+                                <option value="dzn">Dozen</option>
+                            </select>
                         </td>
                     </tr>
                     <tr>

@@ -22,7 +22,7 @@ class BoughtItemController extends Controller
         $BoughtItem->store_id = $request->store;
         $BoughtItem->is_check = 1;
             $this->validate($request,[
-            'price' => 'required|max:50',
+            'price' => 'required|integer|max:50|min:10',
             'store' => 'required|not_in:-1'
         ]);
         $BoughtItem->create_at = Carbon::now();

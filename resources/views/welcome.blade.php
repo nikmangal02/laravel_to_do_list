@@ -6,26 +6,36 @@
             <table class="table table-bordered table-striped">
                 <tr>
                     <td colspan="7">
-                        <div class="text-center"><strong>List of Products</strong></div>
+                        <div class="text-center"><strong><font size="5">List of Products</font></strong></div>
                     </td>
                 </tr>
                 @if($count > 0)
                     <tr>
                         <td>
-                            Name of product
+                            <strong>
+                                Name of product
+                            </strong>
                         </td>
                         <td>
-                            Description
+                            <strong>
+                                Description
+                            </strong>
                         </td>
                         <td>
-                            Quantity
+                            <strong>
+                                Quantity
+                            </strong>
                         </td>
                         <td>
-                            Price(Rs)
+                            <strong>
+                                Price(Rs)
+                            </strong>
                         </td>
                         <td colspan="3">
                             <div class="text-center">
-                                Actions
+                                <strong>
+                                    Actions
+                                </strong>
                             </div>
                         </td>
                     </tr>
@@ -137,7 +147,9 @@
                     <td colspan="2">
                         <div class="text-center">
                             <strong>
+                                <font size="5">
                                 Trending Stores
+                                </font>
                             </strong>
                         </div>
                     </td>
@@ -145,13 +157,18 @@
                 @if($count_store_name > 0)
                     <tr>
                         <td>
-                            Store Name
+                            <strong>
+                                Store Name
+                            </strong>
                         </td>
                         <td>
-                            Purchases(in Rs)
+                            <strong>
+                                Purchases(in Rs)
+                            </strong>
                         </td>
                     </tr>
                     @foreach($store_name as $store)
+                        @if($store->price != null)
                         <tr>
                             <td>
                                 {{$store->store_name}}
@@ -160,6 +177,7 @@
                                 {{$store->price}}
                             </td>
                         </tr>
+                        @endif
                     @endforeach
                 @else
                     <tr>

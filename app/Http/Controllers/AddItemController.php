@@ -17,10 +17,10 @@ class AddItemController extends Controller
         $item = new item();
         $item->name = $request->name;
         $item->description = $request->description;
-        $item->quantity = $request->quantity;
+        $item->quantity = $request->quantity . $request->unit;
         $this->validate($request, [
-            'name' => 'required|min:4',
-            'quantity' => 'required|min:4|max:10|alpha_num'
+            'name' => 'required|alpha|min:3',
+            'quantity' => 'required|integer|min:1|max:100'
         ]);
         $item->save();
 
